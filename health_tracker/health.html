@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="health.css">
+</head>
+<body>
+    <header>
+        <h1>Health Tracker</h1>
+    </header>
+    <main>
+        <section class="tracker">
+            <h2>Activity Tracker</h2>
+            <div class="activity-form">
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity" placeholder="Enter activity">
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" placeholder="Enter duration">
+                <button onclick="trackActivity()">Track</button>
+            </div>
+            <div class="activity-log">
+                <h3>Activity Log</h3>
+                <ul id="activityList"></ul>
+            </div>
+        </section>
+        <section class="nutrition">
+            <h2>Nutrition Log</h2>
+            <!-- Add nutrition log components here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Health Tracker</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
